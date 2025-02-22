@@ -12,7 +12,7 @@ I also built the [ALU](#alu) and the [Register Bank](#register-bank). This part 
 ### Second Day:
 On the second day, I started planning the cycle and machine timing (which I admit was a bit difficult to understand at first, especially without any prior knowledge or examples). At this stage, I struggled to decide whether to make a 'single-cycle' processor (which seems to be the most common for study purposes) or a 'multi-cycle' processor (which appeared to be a more complex yet more challenging project). Logically, I chose to go with 'multi-cycle'.
 
-By the end of the day, I had completed only the following components: [IR](ir-instruction-register), [PC](pc-program-counter), and [Cycle Counter](cycle_counter). Later, I would discover that these are among the most important parts for fetching instructions from ROM.
+By the end of the day, I had completed only the following components: [IR](#ir-instruction-register), [PC](#pc-program-counter), and [Cycle Counter](#cycle_counter). Later, I would discover that these are among the most important parts for fetching instructions from ROM.
 
 **Note:** There are several types of memory that can be used for instructions, such as:
 - ROM
@@ -26,7 +26,7 @@ Each has its own method of recording data.
 On the third day, I finalized the general communication between each component and the initial functionality. I also gained a better understanding of how the overall clock and response decoding work.
 
 ### Fourth Day:
-On this day, I completed the entire processor and established communication between the ROM and RAM. Additionally, I clearly defined the instructions for the [Control Unit](cu-control-unit) (CU), which I found to be the most tedious part of the process.
+On this day, I completed the entire processor and established communication between the ROM and RAM. Additionally, I clearly defined the instructions for the [Control Unit](#cu-control-unit) (CU), which I found to be the most tedious part of the process.
 
 ## Processor:
 The processor operates based on cycles, where each clock pulse updates a specific component until the final step, after which it returns to the beginning. During each machine cycle, the processor essentially:
